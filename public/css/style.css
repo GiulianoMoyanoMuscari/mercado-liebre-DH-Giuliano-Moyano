@@ -21,6 +21,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
+  background-color: var(--Gris-claro);
 }
 
 /* --- Header --- */
@@ -39,18 +40,14 @@ header{
   padding: 15px 25px;
 }
 
-.search-bar button{
-  display: block;
-  margin-top: 2px;
-}
-
 .subtitulo-header{
   text-align: center;
-  padding: 20px;
+  padding-bottom: 20px;
 }
 
-header ul{
-  padding-bottom: 20px;
+header nav,
+header aside{
+  margin-left: 10px;
 }
 
 .burger-menu{
@@ -66,12 +63,47 @@ header ul{
 }
 
 /* --- Main --- */
-.titular{
-  font-size: 24px;
+main{
+  margin: 20px auto;
+  width: 90vw;
 }
 
-main img{
+main section{
+  margin: 50px 0;
+}
+
+.titular{
+  font-size: 24px;
+  color: var(--Gris-oscuro);
+  margin-left: 10px;
+}
+
+.producto{
+  margin: 10px;
+  background-color: white;
+}
+
+.info-product{
+  border-top: solid 1px var(--Gris-claro);
+  padding: 15px;
+}
+
+.icon-truck-envio i{
+  font-size: 16px;
+  border: 1px solid var(--Gris-claro);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.icon-truck-envio i,
+.descuento{
+  color: var(--Verde);
+}
+
+article img{
   width: 300px;
+  margin: auto;
+  display: block;
 }
 
 .precio{
@@ -88,7 +120,7 @@ main img{
 
 /* --- Footer --- */
 footer{
-  padding: 50px 15px 20px 15px;
+  padding: 20px 15px;
   text-align: center;
 }
 
@@ -102,8 +134,6 @@ footer section{
   font-size: 28px;
 }
 
-
-
 .titulo-seccion-footer{
   font-size: 16px;
   color: var(--Gris-oscuro);
@@ -116,4 +146,33 @@ footer section{
 .copyright{
   color: var(--Gris-oscuro);
   text-align: left;
+}
+
+
+/* Media Queris */
+
+/* Version Mobile  */
+@media(max-width: 768px){
+  .descripcion{
+    display: none;
+  }
+
+  aside{
+    display: none;
+  }
+
+  nav{
+    display: none;
+  }
+}
+
+/* Tablet y Superior */
+@media(min-width: 769px){
+  .producto{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  .burger-menu{
+    display: none;
+  }
 }
