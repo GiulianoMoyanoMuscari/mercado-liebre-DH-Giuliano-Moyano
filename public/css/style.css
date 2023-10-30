@@ -1,0 +1,119 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+:root{
+  --Amarillo: #EAC926;
+  --Azul: #03264C;
+  --Celeste: #1259c3;
+  --Gris-oscuro: #666;
+  --Gris-claro: #ebebeb;
+  --Verde: #39b54a;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+
+/* --- Header --- */
+header{
+  background-color: var(--Amarillo);
+  padding: 20px 0px;
+}
+
+.logo-contenedor{
+  width: 50%;
+  max-width: 250px;
+  padding: 0px 25px;
+}
+
+.search-bar{
+  padding: 15px 25px;
+}
+
+.search-bar button{
+  display: block;
+  margin-top: 2px;
+}
+
+.subtitulo-header{
+  text-align: center;
+  padding: 20px;
+}
+
+header ul{
+  padding-bottom: 20px;
+}
+
+.burger-menu{
+  text-align: center;
+}
+
+.burger-menu i{
+  background-color: var(--Celeste);
+  color: var(--Gris-claro);
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* --- Main --- */
+.titular{
+  font-size: 24px;
+}
+
+main img{
+  width: 300px;
+}
+
+.precio{
+  font-size: 18px;
+}
+
+.descuento{
+  font-size: 16px;
+}
+
+.descripcion{
+  font-size: 16px;
+}
+
+/* --- Footer --- */
+footer{
+  padding: 50px 15px 20px 15px;
+  text-align: center;
+}
+
+footer section{
+  padding: 30px;
+}
+
+.credit-card-icon,
+.gift-icon,
+.user-shield-icon {
+  font-size: 28px;
+}
+
+
+
+.titulo-seccion-footer{
+  font-size: 16px;
+  color: var(--Gris-oscuro);
+}
+
+.parrafo-footer{
+  color: var(--Gris-oscuro);
+}
+
+.copyright{
+  color: var(--Gris-oscuro);
+  text-align: left;
+}
