@@ -58,7 +58,8 @@ header{
 
 /* -- Barra de Navegacion -- */
 .main-navbar{
-  padding: 30px 0;
+  padding: 30px 15px;
+  display: none;
 }
 
 .left-navbar{
@@ -68,6 +69,7 @@ header{
 /* -- Menu Hamburguesa -- */
 .burger-menu{
   text-align: center;
+  padding-bottom: 15px;
 }
 
 .burger-menu i{
@@ -98,11 +100,11 @@ main{
   margin: 10px 0;
 
   /* Ajuste de Ancho */
-  width: 350px;
+  /* width: 350px; */
 }
 
 .img-product{
-  width: 300px;
+  width: 80%;
   margin: auto;
   display: block;
 }
@@ -155,6 +157,7 @@ main{
 }
 
 .description-product{
+  display: none;
   font-weight: 400;
   color: var(--Gris-oscuro);
   /* MD 1 */
@@ -194,24 +197,26 @@ footer{
 }
 
 /* ------------ Media Queris ------------ */
-/* Version Mobile  */
-@media(max-width: 768px){
-  .description-product{
-    display: none;
-  }
-
+/* Version Tablet (entre 361 y 768)  */
+@media(min-width: 361px){
   .main-navbar{
-    display: none;
-  }
-}
-
-/* Tablet y Superior */
-@media(min-width: 769px){
-  .product-card{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    display: block;
   }
 
   .burger-menu{
     display: none;
   }
+
+  .product-card{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  .description-product{
+    display: block;
+  }
+}
+
+/* Version Desktop (de 769 hacia arriba) */
+@media(min-width: 769px){
+
 }
