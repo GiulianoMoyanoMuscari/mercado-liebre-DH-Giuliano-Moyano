@@ -33,7 +33,7 @@ body{
 /* --------- Header --------- */
 header{
   background-color: var(--Amarillo);
-  padding-bottom: 25px;
+  /* padding-bottom: 25px; */
 }
 
 /* -- Header top -- */
@@ -96,19 +96,26 @@ main{
 .product-card{
   background-color: white;
   margin: 10px 0;
+
+  /* Ajuste de Ancho */
+  width: 350px;
 }
 
 .img-product{
-  width: 200px;
+  width: 300px;
   margin: auto;
   display: block;
 }
 
 .info-product{
   border: 1px solid var(--Gris-claro);
-  padding: 15px;
+  padding: 25px;
 /* Poscicionar icono de envio */
   position: relative;
+  /* Flexbox - MD1 */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .icon-truck-envio i{
@@ -133,11 +140,26 @@ main{
 
 .price-product{
   font-size: var(--Precios);
+  /* MD 1 */
+  width: 30%;
+}
+
+.discount-product{
+  /* MD 1 */
+  width: 70%;
 }
 
 .discount-product,
 .description-product{
   font-size: var(--Descuentos-y-Descripciones);
+}
+
+.description-product{
+  font-weight: 400;
+  color: var(--Gris-oscuro);
+  /* MD 1 */
+  align-self: flex-end;
+  margin-top: 15px;
 }
 
 /* --------- Footer --------- */
