@@ -12,7 +12,6 @@
   --Precios: 18px;
   --Descuentos-y-Descripciones: 16px;
   --Cuerpo-de-texto: 12px;
-
 }
 
 *{
@@ -33,17 +32,22 @@ body{
 /* --------- Header --------- */
 header{
   background-color: var(--Amarillo);
-  /* padding-bottom: 25px; */
 }
 
 /* -- Header top -- */
 .header-top-bar{
   padding: 25px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .logo{
   width: 50%;
-  max-width: 150px;
+  max-width: 250px;
+  min-width: 200px;
 }
 
 .search-bar{
@@ -53,12 +57,12 @@ header{
 .subtitle-header{
   font-size: 14px;
   font-weight: 400;
-  text-align: center;
+  margin-top: 15px;
 }
 
 /* -- Barra de Navegacion -- */
 .main-navbar{
-  padding: 30px 15px;
+  padding: 15px 25px;
   display: none;
 }
 
@@ -80,6 +84,11 @@ header{
   border-radius: 5px;
 }
 
+.banner-header{
+  width: 100%;
+  margin-bottom: -5px;
+} 
+
 
 /* --------- Main --------- */
 main{
@@ -92,6 +101,10 @@ main{
   font-size: var(--Titulares-secciones);
   color: var(--Gris-oscuro);
   margin-bottom: 15px;
+}
+
+.section-product{
+  margin: 15px 0 50px;
 }
 
 /* -- Producto -- */
@@ -201,8 +214,25 @@ footer{
 /* Version Tablet (entre 361 y 768)  */
 @media(min-width: 560px){
 /* --------- Header --------- */
+  .subtitle-header{
+    margin: 15px 0;
+  }
+
   .main-navbar{
-    display: block;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .main-navbar ul{
+    display: flex;
+  }
+
+  .left-navbar li{
+    margin-right: 10px;
+  }
+
+  .right-navbar li{
+    margin-left: 10px;
   }
 
   .burger-menu{
@@ -227,6 +257,18 @@ footer{
 
 /* Version Desktop (de 769 hacia arriba) */
 @media(min-width: 1100px){
+  .header-top-bar{
+    padding: 25px 25px 15px;
+  }
+
+  .left-navbar li{
+    margin-right: 20px;
+  }
+
+  .right-navbar li{
+    margin-left: 20px;
+  }
+
   .product-card{
     width: 23%;
   }
