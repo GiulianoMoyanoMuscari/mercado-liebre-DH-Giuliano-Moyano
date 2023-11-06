@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root{
+  --Amarillo: #EAC926;
+  --Azul: #03264C;
+  --Celeste: #1259c3;
+  --Gris-oscuro: #666;
+  --Gris-claro: #ebebeb;
+  --Verde: #39b54a;
+  /* Tamaños Tipograficos */
+  --Titulares-secciones: 24px;
+  --Precios: 18px;
+  --Descuentos-y-Descripciones: 16px;
+  --Cuerpo-de-texto: 12px;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  font-size: var(--Cuerpo-de-texto);
+  background-color: var(--Gris-claro);
+}
+
+/* --------- Main --------- */
+main{
+  width: 90vw;
+  margin: 30px auto;
+}
+
+/* ---- Seccion ---- */
+.section-title{
+  font-size: var(--Titulares-secciones);
+  color: var(--Gris-oscuro);
+  margin-bottom: 15px;
+}
+
+.section-product{
+  margin: 15px 0 50px;
+}
+
+/* -- Producto -- */
+.product-card{
+  background-color: white;
+  margin: 10px auto;
+
+  /* Ajuste de Ancho */
+  max-width: 350px;
+}
+
+.img-product{
+  width: 80%;
+  margin: auto;
+  display: block;
+}
+
+.info-product{
+  border: 1px solid var(--Gris-claro);
+  padding: 25px;
+  text-align: center;
+/* Poscicionar icono de envio */
+  position: relative;
+  /* Flexbox - MD1 */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.icon-truck-envio i{
+  font-size: 16px;
+  border: 1px solid var(--Verde);
+  border-radius: 50%;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+/* Poscicionar icono de envio */
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+
+.icon-truck-envio i,
+.discount-product{
+  color: var(--Verde);
+}
+
+.price-product{
+  font-size: var(--Precios);
+  /* MD 1 */
+  width: 30%;
+}
+
+.discount-product{
+  /* MD 1 */
+  width: 70%;
+}
+
+.discount-product,
+.description-product{
+  font-size: var(--Descuentos-y-Descripciones);
+}
+
+.description-product{
+  display: none;
+  font-weight: 400;
+  color: var(--Gris-oscuro);
+  /* MD 1 */
+  align-self: flex-end;
+  margin-top: 15px;
+}
+
+/* ------------ Media Queris ------------ */
+/* Version Tablet (entre 361 y 768)  */
+@media(min-width: 560px){
+  /* --------- Main --------- */
+    .section-product{
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .product-card{
+      box-shadow: 0px 0px 10px rgb(100, 100, 100);
+      width: 45%;
+    }
+  
+    .description-product{
+      display: block;
+    }
+  }
+  
+  /* Version Desktop (de 769 hacia arriba) */
+  @media(min-width: 1100px){
+    .product-card{
+      width: 23%;
+    }
+  }
