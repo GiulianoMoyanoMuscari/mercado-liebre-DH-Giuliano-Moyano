@@ -10,6 +10,7 @@
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Estilos -->
+  <link rel="stylesheet" href="/css/register.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -55,42 +56,48 @@
 
   <!--------- Main --------->
   <main>
-    <h1>¡Registrese!</h1>
+    <h1 class="title-form">¡Registrese!</h1>
     <form action="/" method="post">
       <!-- Nombre y Apellido -->
-      <p>
+      <div class="container-input">
         <label for="full_name">Nombre Completo</label>
         <input type="text" id="full_name" name="full_name" minlength="5" required>
-      </p>
+      </div>
       
       <!-- Nombre de Usuario -->
-      <p>
+      <div class="container-input">
         <label for="user_name">Nombre de Usuario</label>
         <input type="text" id="user_name" name="user_name" minlength="3" required>
-      </p>
+      </div>
       
       <!-- Email -->
-      <p>
+      <p class="container-input">
         <label for="email">Email</label>
         <input type="email" id="email" name="email" required>
       </p>
       
       <!-- Fecha de Nacimiento -->
-      <p>
+      <div class="container-input">
         <label for="birthday">Fecha de nacimiento</label>
         <input type="date" name="birthday" id="birthday" required />
-      </p>
+      </div>
     
       <!-- Domicilio -->
-      <p>
+      <div class="container-input">
         <label for="address">Domicilio</label>
         <input type="text" name="address" id="address" required />
-      </p>
+      </div>
+      
+      <!-- Foto de Usuario -->
+      <div class="container-input"> 
+        <label for="user_picture">Foto de perfil</label>
+        <input type="file" id="user_picture" name="user_picture" accept=".jpg, .png">
+      </div>
       
       <!-- Perfil de Usuario -->
-      <fieldset>
+      <fieldset class="container-list-form">
         <legend>Perfil de usuario</legend>
-        <ul>
+        <ul class="list-form">
           <li>
             <input type="radio" name="user_profile" id="buyer" value="Comprador" />
             <label for="buyer">Comprador</label>
@@ -103,9 +110,9 @@
       </fieldset>
 
       <!-- Intereses -->
-      <fieldset>
+      <fieldset class="container-list-form">
         <legend>Intereses</legend>
-        <ul>
+        <ul class="list-form list-checkbox">
           <li>
             <input type="checkbox" name="interest" id="electro" value="Electro" />
             <label for="electro">Electro</label>
@@ -129,25 +136,23 @@
         </ul>
       </fieldset>
       
-      <p> <!-- Foto de Usuario -->
-        <label for="user_picture">Foto de perfil</label>
-        <input type="file" id="user_picture" name="user_picture" accept=".jpg, .png">
-      </p>
       
       <!-- Contraseña -->
-      <p>
+      <div class="container-input">
         <label for="password">Contraseña</label>
         <input type="password" id="password" name="password" required>
-      </p>
+      </div>
       
       <!-- Confirmar Contraseña -->
-      <p>
+      <div class="container-input">
         <label for="confirm_password">Confirmar Contraseña</label>
         <input type="password" id="confirm_password" name="confirm_password"  required>
-      </p>
+      </div>
       
-      <button type="submit">Enviar</button>
-      <button type="reset">Borrar</button>
+      <div class="container-buttons">
+        <button class="button-form" type="submit">Registrarse</button>
+        <button class="button-form btn-reset" type="reset">Borrar</button>
+      </div>
     </form>
   </main>
 

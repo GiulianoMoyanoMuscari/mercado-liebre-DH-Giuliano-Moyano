@@ -1,0 +1,126 @@
+:root{
+  --Amarillo: #EAC926;
+  --Azul: #03264C;
+  --Celeste: #1259c3;
+  --Gris-oscuro: #666;
+  --Gris-claro: #ebebeb;
+  --Verde: #39b54a;
+  /* Tamaños Tipograficos */
+  --Titulares-secciones: 24px;
+  --Precios: 18px;
+  --Descuentos-y-Descripciones: 16px;
+  --Cuerpo-de-texto: 12px;
+}
+
+main{
+  margin: 50px auto;
+  padding: 0px 35px;
+}
+
+.title-form{
+  color: var(--Gris-oscuro);
+  text-align: center;
+}
+
+/* Inputs Normales */
+.container-input{
+  margin-top: 25px;
+  text-align: center;
+}
+
+.container-input label{
+  font-size: var(--Descuentos-y-Descripciones);
+  display: inline-block;
+  text-align: start;
+  width: 80%;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.container-input input{
+  border-style: none;
+  padding: 8px 10px;
+  border-radius: 5px;
+  width: 80%;
+  height: 2.5rem;
+}
+
+/* Inputs Check & Radio */
+.container-list-form{
+  border-style: none;
+  width: 80%;
+  margin: 25px auto;
+}
+
+
+legend{
+  font-size: var(--Precios);
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.list-checkbox{
+  display: flex;
+  flex-direction: column;
+}
+
+.list-form li{
+  display: inline-block;
+  font-size: var(--Descuentos-y-Descripciones);
+  margin: 10px 25px 0px;
+}
+
+li label{
+  margin-left: 10px;
+}
+
+.button-form{
+  background-color: var(--Celeste);
+  color: white;
+  border-style: none;
+  font-size: var(--Precios);
+  padding: 8px 15px;
+  border-radius: 15px;
+  margin: 25px auto 0px;
+  display: block;
+  min-width: 125px;
+}
+
+.btn-reset{
+  background-color: var(--Azul);
+}
+
+/* Media Queris */
+@media (min-width:700px){
+  form{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .container-input{
+    text-align: start;
+    width: 50%;
+  }
+
+  .container-list-form{
+    width: 50%;
+  }
+
+  .list-form{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-buttons{
+    margin: auto;
+  }
+}
+
+@media (min-width:1100px){
+  form{
+    max-width: 1030px;
+    margin: auto;
+  }
+}
+
+
