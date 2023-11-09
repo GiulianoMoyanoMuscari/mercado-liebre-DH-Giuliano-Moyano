@@ -1,0 +1,63 @@
+:root{
+  --Amarillo: #EAC926;
+  --Azul: #03264C;
+  --Celeste: #1259c3;
+  --Gris-oscuro: #666;
+  --Gris-claro: #ebebeb;
+  --Verde: #39b54a;
+  /* Tamaños Tipograficos */
+  --Titulares-secciones: 24px;
+  --Precios: 18px;
+  --Descuentos-y-Descripciones: 16px;
+  --Cuerpo-de-texto: 12px;
+}
+
+main{
+  width: 80%;
+  margin: 50px auto;
+  padding: 25px 20px;
+  border: 1px solid var(--Gris-oscuro);
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.15);
+  max-width: 450px;
+}
+
+
+.title-form{
+  color: var(--Gris-oscuro);
+  text-align: center;
+}
+
+.container-input{
+  margin-top: 25px;
+  text-align: center;
+}
+
+.container-input label{
+  font-size: var(--Descuentos-y-Descripciones);
+  display: inline-block;
+  text-align: start;
+  width: 85%;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.container-input input{
+  border-style: none;
+  padding: 8px 10px;
+  border-radius: 5px;
+  width: 85%;
+  height: 2.5rem;
+}
+
+.button-form{
+  background-color: var(--Celeste);
+  color: white;
+  border-style: none;
+  font-size: var(--Precios);
+  padding: 8px 15px;
+  border-radius: 15px;
+  margin: 25px auto 0px;
+  display: block;
+}
+

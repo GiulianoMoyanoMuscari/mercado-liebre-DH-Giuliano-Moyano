@@ -10,6 +10,7 @@
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Estilos -->
+  <link rel="stylesheet" href="/css/login.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -55,20 +56,19 @@
 
   <!--------- Main --------->
   <main>
-    <h1>Inicia Sesión</h1>
-    <form action="/">
-      <p>
+    <h1 class="title-form">Inicia Sesión</h1>
+    <form action="/" method="post">
+      <div class="container-input">
         <label for="user_name">Nombre de Usuario</label>
         <input type="text" id="user_name" name="user_name" required>
-      </p>
+      </div>
 
-      <p>
+      <div class="container-input">
         <label for="pass">Contraseña</label>
         <input type="password" id="pass" name="password" required>
-      </p>
+      </div>
 
-
-      <button type="submit">Iniciar Sesión</button>
+      <button class="button-form" type="submit">Iniciar Sesión</button>
     </form>
   </main>
 
