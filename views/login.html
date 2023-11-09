@@ -41,8 +41,8 @@
         <li><a href="#">Ayuda</a></li>
       </ul>
       <ul class="right-navbar">
-        <li><a href="#">Creá tu cuenta <i class="fa-regular fa-address-card"></i></a></li>
-        <li><a href="#">Ingresá <i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
+        <li><a href="/register">Creá tu cuenta <i class="fa-regular fa-address-card"></i></a></li>
+        <li><a href="/login">Ingresá <i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
         <li><a href="#">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
       </ul>
     </nav>
@@ -51,11 +51,26 @@
     <div class="burger-menu">
       <i class="fas fa-bars"></i>
     </div>
-
-    <!-- Banner -->
-    <img class="banner-header" src="/images/img-home-banner.jpg" alt="banner"> 
   </header>
 
+  <!--------- Main --------->
+  <main>
+    <h1>Inicia Sesión</h1>
+    <form action="/">
+      <p>
+        <label for="user_name">Nombre de Usuario</label>
+        <input type="text" id="user_name" name="user_name" required>
+      </p>
+
+      <p>
+        <label for="pass">Contraseña</label>
+        <input type="password" id="pass" name="password" required>
+      </p>
+
+
+      <button type="submit">Iniciar Sesión</button>
+    </form>
+  </main>
 
   <!--------- Footer --------->
   <footer>
