@@ -131,11 +131,13 @@ footer{
   color: var(--Gris-oscuro);
 }
 
-.credit-card-icon,
-.gift-icon,
-.user-shield-icon {
+.footer-icon {
   font-size: 2em;
   margin-bottom: 10px;
+}
+
+.footer-icon i{
+  color: var(--Celeste);
 }
 
 .copyright{
@@ -187,4 +189,21 @@ footer{
     margin-left: 20px;
   }
 
+  footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .footer-section{
+    width: 33%;
+  }
+
+  .footer-section:hover i{
+    color: var(--Verde);
+  }
+
+  .copyright{
+    margin-right: auto;
+  }
 }
