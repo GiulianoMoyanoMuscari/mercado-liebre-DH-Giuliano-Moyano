@@ -8,7 +8,7 @@ const port = 3000;
 const pathPublic = path.join(__dirname, './public/');
 
 // Levantamos el Servidor //
-app.listen(port, ()=> console.log(`Servidor funcionando en el puerto ${port}.`));
+app.listen(port, ()=> console.log(`Servidor funcionando en el puerto ${port}. http://localhost:3000/`));
 
 // Definimos Rutas y Flujo Request-Response  //
 app.get('/', (req, res) => {
