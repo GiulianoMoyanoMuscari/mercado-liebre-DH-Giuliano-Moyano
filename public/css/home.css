@@ -95,12 +95,10 @@ main{
 
 .price-product{
   font-size: var(--Precios);
-  /* MD 1 */
   width: 30%;
 }
 
 .discount-product{
-  /* MD 1 */
   width: 70%;
 }
 
@@ -110,7 +108,7 @@ main{
 }
 
 .description-product{
-  display: none;
+  visibility: hidden;
   font-weight: 400;
   color: var(--Gris-oscuro);
   /* MD 1 */
@@ -128,12 +126,21 @@ main{
     }
   
     .product-card{
-      box-shadow: 0px 0px 10px rgb(100, 100, 100);
       width: 45%;
     }
   
-    .description-product{
-      display: block;
+    .product-card:hover{
+      box-shadow: 0px 0px 10px rgb(100, 100, 100);
+      transition: all 0.5s;
+    }
+
+    .product-card:hover .description-product{
+      visibility: visible;
+    }
+
+    .icon-truck-envio:hover i{
+      transform: rotate(-90deg);
+      transition: all 0.5s;
     }
   }
   
